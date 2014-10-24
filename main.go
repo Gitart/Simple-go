@@ -8,8 +8,9 @@ import (
 )
 
 // Функция раоботы с базой
+// Добавлена для досутпа к базе 
 func main() {
-	session, err := r.Connect(r.ConnectOpts{Address: "10.0.20.5:28015", Database: "test"})
+	session, err := r.Connect(r.ConnectOpts{Address: "localhost:28015", Database: "test"})
 
 	if err != nil {
 		log.Fatalln(err)
